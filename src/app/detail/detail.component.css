@@ -1,0 +1,83 @@
+.relative {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div {
+    text-align: center;
+}
+
+.btItem {
+    display: inline-block;
+    flex-grow: 1;
+    height: 15px;
+}
+
+.divContainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+    padding: 15px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue;
+    font-size: 17px;
+    font-weight: bold;
+    width: 105.53px;
+    height: 32px;
+}
+
+img {
+    height: 168px;
+    width: 300px;
+    padding: 25px;
+}
+
+.rightGrid {
+    grid-area: right;
+    background-color: lightcoral;
+    padding: 7%;
+}
+
+td {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftGrid {
+    grid-area: left;
+    background-color: lightblue;
+}
+
+table {
+    margin: auto;
+    padding-top: inherit;
+}
+
+@media screen and (orientation: portrait) {
+    .divContainer {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "right" "left";
+    }
+    img {
+        height: 137px;
+        width: 228px;
+        padding: 25px;
+    }
+    table {
+        margin: auto;
+        padding-top: 3%;
+    }
+    button {
+        font-size: 14px;
+        width: 89.53px;
+        height: 31px;
+    }
+}

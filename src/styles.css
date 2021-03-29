@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+app-header>h1,
+app-footer>h1 {
+    color: white;
+    background-color: rgb(158, 8, 20);
+    text-align: center;
+    margin: auto;
+    font-size: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(236, 222, 16);
+}
+
+@media screen and (orientation: portrait) {
+    h1 {
+        font-size: x-large;
+    }
+}
