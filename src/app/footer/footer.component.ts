@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import for sonikunj.ts
 import {Sonikunj} from '../sonikunj';
 
 @Component({
@@ -8,6 +9,7 @@ import {Sonikunj} from '../sonikunj';
 })
 export class FooterComponent implements OnInit {
 
+  //class instance
   sonikunj : Sonikunj={
     assignmentTitle: 'Assignment#3',
     studentNumber: 991591881,
