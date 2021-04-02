@@ -1,3 +1,4 @@
+//data for Car using class Car
 import {Car} from '../../app/carInfo';
 
 export const CARS: Car[] = [
