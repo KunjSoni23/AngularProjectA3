@@ -24,10 +24,6 @@ export class DetailComponent implements OnInit {
 
     if (divs.style.display == 'none') {
       divs.style.display = 'block';
-    } 
-    else {
-      divs.style.display = 'none';
     }
-
   }
 }
