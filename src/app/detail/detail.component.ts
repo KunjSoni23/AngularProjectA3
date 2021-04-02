@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { CARS} from '../myCars';
-import {CARS} from '../../assets/data/myCars';
+import { CARS } from '../../assets/data/myCars';
 
 @Component({
   selector: 'app-detail',
@@ -8,25 +7,27 @@ import {CARS} from '../../assets/data/myCars';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
- in : number;
- 
+  in: number = 0;
+
   myCars = CARS;
 
   constructor() { }
 
-  goodToGo: boolean[] = [];
-
-  goodStyle = [];
-
-  
   ngOnInit(): void {
-    this.in=0;      
+    this.in = 0;
   }
 
-
-  onClickMe(i) : void{
-    // this.goodToGo[i] = !this.goodToGo[i];
+  onClickMe(i): void {
     this.in = i;
-  }
 
+    var divs = document.getElementById("myDiv");
+
+    if (divs.style.display == 'none') {
+      divs.style.display = 'block';
+    } 
+    else {
+      divs.style.display = 'none';
+    }
+
+  }
 }

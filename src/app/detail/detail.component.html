@@ -10,29 +10,31 @@
     <p *ngFor="let item of myCars;let i=index;" class="btItem">
         <button (click)="onClickMe(i)">{{item.carMake}}</button>
     </p>
-    <div class="divContainer">
-        <div class="leftGrid">
-            <img src="{{myCars[in].picture}}">
+    <section id="myDiv" style="display: none;">
+        <div class="divContainer">
+            <div class="leftGrid">
+                <img src="{{myCars[in].picture}}">
+            </div>
+            <div class="rightGrid">
+                <table>
+                    <tr>
+                        <td><strong>Car Make </strong></td>:
+                        <td>{{myCars[in].carMake}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Car Model </strong></td>:
+                        <td>{{myCars[in].carModel}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Body Type </strong></td>:
+                        <td>{{myCars[in].bodyType}}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color</strong></td>:
+                        <td>{{myCars[in].color}}</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="rightGrid">
-            <table>
-                <tr>
-                    <td><strong>Car Make </strong></td>:
-                    <td>{{myCars[in].carMake}}</td>
-                </tr>
-                <tr>
-                    <td><strong>Car Model </strong></td>:
-                    <td>{{myCars[in].carModel}}</td>
-                </tr>
-                <tr>
-                    <td><strong>Body Type </strong></td>:
-                    <td>{{myCars[in].bodyType}}</td>
-                </tr>
-                <tr>
-                    <td><strong>Color</strong></td>:
-                    <td>{{myCars[in].color}}</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+    </section>
 </div>

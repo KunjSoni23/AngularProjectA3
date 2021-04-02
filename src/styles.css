@@ -17,6 +17,7 @@ app-footer>h1 {
     margin: auto;
     font-size: unset;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12px;
 }
 
 body {
